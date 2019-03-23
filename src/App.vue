@@ -1,19 +1,14 @@
 <template>
   <v-app>
-    <v-toolbar app>
+    <v-toolbar app class="pa-2 elevation-0 teal darken-4 white--text">
       <v-toolbar-title class="headline text-uppercase">
-        <span>Dogs Are Fun</span>
+        <span>My Favourite Dogs</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn flat>Link One</v-btn>
-        <v-btn flat>Link Two</v-btn>
-        <v-btn flat>Link Three</v-btn>
-      </v-toolbar-items>
     </v-toolbar>
 
     <v-content>
-      Content
+      <router-view></router-view>
     </v-content>
   </v-app>
 </template>
@@ -22,12 +17,6 @@
 
 export default {
   name: 'App',
-  components: {
-  },
-  data() {
-    return {
-      //
-    };
-  },
+
 };
 </script>
